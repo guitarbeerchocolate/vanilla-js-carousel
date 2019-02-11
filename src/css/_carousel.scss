@@ -1,0 +1,34 @@
+$arrow-position: 10px;
+
+.carousel {
+  background-color: #E5E5E5;
+
+  .carousel__item {
+    display: none;
+    height:auto;
+    img {
+      width:100%;
+    }
+  }
+
+  .carousel__item--active {
+    display: inline;
+  }
+
+  .carousel--prev, .carousel--next {
+    a {
+      position: absolute;
+      top: 50%;
+      color: white;
+      text-decoration: none;
+      font-size: 40px;
+      font-weight: bold;
+      margin: $arrow-position;
+    }
+  }
+
+  .carousel--next > a {
+    right: $arrow-position;
+  }
+
+}
